@@ -1,5 +1,6 @@
-/* Write a function that takes a string and returns the first character of the string. 
-Test your function on a few inputs, including the empty string. */
+/*
+Write a function that takes a string and returns the first character of the string. 
+Test your function on a few inputs, including the empty string.
 
 function firstCharacter(str) {
     var firstFunction = str.charAt(0);
@@ -7,9 +8,11 @@ function firstCharacter(str) {
 }
 
 firstCharacter("grunt");
+*/
 
-/* Write a function that takes a string and returns the last character of a string. 
-Test your function on a few inputs, including the empty string. */
+/* 
+Write a function that takes a string and returns the last character of a string. 
+Test your function on a few inputs, including the empty string.
 
 function lastCharacter(str) {
     var secondFunction = str.charAt(str.length - 1);
@@ -17,9 +20,11 @@ function lastCharacter(str) {
 }
 
 lastCharacter("grunt");
+*/
 
-/*Write a function that takes a string and a number, and returns the character at the position represented by the number. 
-The indexing of number should start at 0. Test your function on a few inputs, including the empty string.*/
+/*
+Write a function that takes a string and a number, and returns the character at the position represented by the number. 
+The indexing of number should start at 0. Test your function on a few inputs, including the empty string.
 
 function numberCharacter(str, num) {
     var thirdFunction = str.charAt(num);
@@ -27,9 +32,11 @@ function numberCharacter(str, num) {
 }
 
 numberCharacter("grunt", 3);
+*/
 
-/*Write a function that takes two numbers and adds them together. Test your function on a few inputs. 
-Write in the comments what happens when you pass something other than a number to your function.*/
+/*
+Write a function that takes two numbers and adds them together. Test your function on a few inputs. 
+Write in the comments what happens when you pass something other than a number to your function.
 
 function addTwoNumbers(num1, num2) {
     var fourthFunction = num1 + num2;
@@ -38,9 +45,11 @@ function addTwoNumbers(num1, num2) {
 
 addTwoNumbers(5, "string");
 //if pass something other than a number it just logs the two inputs together
+*/
 
-/*Write a function that takes two numbers and multiplies them together. Test your function on a few inputs. 
-Write in your comments what happens when you pass something other than a number to your function.*/
+/*
+Write a function that takes two numbers and multiplies them together. Test your function on a few inputs. 
+Write in your comments what happens when you pass something other than a number to your function.
 
 function multiplyTwoNumbers(num1, num2) {
     var fithFunction = num1 * num2;
@@ -49,10 +58,12 @@ function multiplyTwoNumbers(num1, num2) {
 
 multiplyTwoNumbers(5, 5);
 //when passing something other than a number we get "ReferenceError: string is not defined"
+*/
 
-/*Write a function that takes two numbers and a string. If the string is ‘add’, then return the sum of the numbers. 
+/*
+Write a function that takes two numbers and a string. If the string is ‘add’, then return the sum of the numbers. 
 If the string is ‘subtract’, return the difference. If the string is ‘mult’, return the product. 
-If the string is ‘div’, return the ratio. Otherwise return 0.*/
+If the string is ‘div’, return the ratio. Otherwise return 0.
 
 function differentOperations(num1, num2, str) {
     if (str === "add") {
@@ -69,9 +80,11 @@ function differentOperations(num1, num2, str) {
 }
 
 differentOperations(5, 5, "test");
+*/
 
-/*Write a function that takes a string and a number, and returns the string repeated that many number of times. 
-Test your function with various inputs.*/
+/*
+Write a function that takes a string and a number, and returns the string repeated that many number of times. 
+Test your function with various inputs.
 
 function stringRepeated(str, num) {
     for (i = 0; i <= num; i++) {
@@ -80,10 +93,12 @@ function stringRepeated(str, num) {
 }
 
 stringRepeated("test", 5);
+*/
 
-/*Write a function that takes a string, and returns the reverse of that string. 
+/*
+Write a function that takes a string, and returns the reverse of that string. 
 For example, if you pass the function the string “hello”, it should return “olleh”. 
-Test your function on a few inputs, including the empty string.*/
+Test your function on a few inputs, including the empty string.
 
 function inverseString(str) {
     var x = str.split('').reverse().join('');
@@ -91,3 +106,21 @@ function inverseString(str) {
 }
 
 inverseString("test");
+*/
+
+/*Write a function that takes a number and returns the factorial of a number. The factorial of 5 is 5x4x3x2x1. 
+The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.*/
+
+function factorialNumber(num) {
+    if (num === 0) {
+        console.log(1);
+    } else {
+        var x = 1;
+        for (var i = num; i > 0; i--) {
+            x = x*i;
+        }
+    }
+    console.log(x)
+}
+
+factorialNumber(5);
