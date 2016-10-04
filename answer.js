@@ -201,7 +201,7 @@ function onlyTruthy(array) {
 onlyTruthy([true, false, 0, 45, undefined, "test"]);
 */
 
-/*Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.*/
+/*Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.
 
 function sumArray(array) {
     var sum = 0
@@ -212,4 +212,30 @@ function sumArray(array) {
 }
 
 sumArray([1, 2, 3]);
+*/
 
+/*Write a function that takes two arrays, and returns an array of all elements that are only in one array. 
+For example, with [1,2,3] and [1,2,4,5] the function should return [3,4,5]. Test your function on different inputs. 
+Hint: you should look up array methods indexOf and slice.*/
+
+//loop over first array for each elment in the array check if it does not exist in the second
+//if doesnt exist push to new array
+//same thing thing second array
+
+function compareArrays(array1, array2) {
+    var newArray = [];
+    for (var i = 0; i < array1.length; i++) {
+        if (array2.indexOf(array1[i]) === -1) {
+            newArray.push(array1[i]);
+        }
+       
+    }
+    
+    for (var i = 0; i < array2.length; i++) {
+        if (array1.indexOf(array2[i]) === -1) {
+            newArray.push(array2[i]);
+        }
+    }
+    console.log(newArray);
+}
+compareArrays([1, 2, 3, 4], [2, 6, 10, 4]);
