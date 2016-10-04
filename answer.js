@@ -27,3 +27,15 @@ function numberCharacter(str, num) {
 }
 
 numberCharacter("grunt", 3);
+
+/*Write a function that takes two numbers and adds them together. Test your function on a few inputs. 
+Write in the comments what happens when you pass something other than a number to your function.*/
+
+function addTwoNumbers(num1, num2) {
+    var fourthFunction = num1 + num2;
+    console.log(fourthFunction);
+}
+
+addTwoNumbers(5, "string");
+//if pass something other than a number it just logs the two inputs together
+
