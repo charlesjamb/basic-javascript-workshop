@@ -7,3 +7,12 @@ function firstCharacter(str) {
 }
 
 firstCharacter("grunt");
+
+/* Write a function that takes a string and returns the last character of a string. 
+Test your function on a few inputs, including the empty string. */
+
+function lastCharacter(str) {
+    var secondFunction = str.charAt(str.length - 1);
+    console.log(secondFunction);
+}
+lastCharacter("grunt");
