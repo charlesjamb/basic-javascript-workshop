@@ -108,8 +108,9 @@ function inverseString(str) {
 inverseString("test");
 */
 
-/*Write a function that takes a number and returns the factorial of a number. The factorial of 5 is 5x4x3x2x1. 
-The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.*/
+/*
+Write a function that takes a number and returns the factorial of a number. The factorial of 5 is 5x4x3x2x1. 
+The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.
 
 function factorialNumber(num) {
     if (num === 0) {
@@ -124,3 +125,22 @@ function factorialNumber(num) {
 }
 
 factorialNumber(5);
+*/
+
+/*Write a function that takes a phrase as a string, and returns the longest word in that phrase. 
+If the phrase contains more than one such word, return the first occurrence. Test your function on a few inputs.*/
+
+function longestWord(str) {
+    var arr = str.split(" ");
+    var longest = 0;
+    var word = " ";
+    for (var i = 0; i < arr.length; i++) {
+        if (longest < arr[i].length) {
+            longest = arr[i].length;
+            word = arr[i];
+        }
+    }
+    console.log(word);
+}
+
+longestWord("Pride and Prejudice")
