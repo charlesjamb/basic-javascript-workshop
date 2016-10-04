@@ -148,7 +148,7 @@ longestWord("Pride and Prejudice")
 
 /*Write a function that takes a phrase, and returns the same phrase with every word capitalized. 
 For example, if you pass your function "hello world", it should return “Hello World” and if you pass it “HELLO WORLD” 
-or even "HeLLo WoRLD", it will also return "Hello World". Test your function of a few inputs.*/
+or even "HeLLo WoRLD", it will also return "Hello World". Test your function of a few inputs.
 
 function capitalizedString(str) {
     var newString = "";
@@ -163,3 +163,23 @@ function capitalizedString(str) {
     console.log(newString);
 }
 capitalizedString("hello worD")
+*/
+
+/*Write a function that takes an array and returns the largest number of the array. Test your function on a few inputs.*/
+
+function largestNumber(array) {
+
+    var number = array[0];
+    
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] > number) {
+            number = array[i];
+        }
+    }
+    
+    console.log(number);
+}
+largestNumber([-10, -2, -3, -4, -5, -6])
+
+
+
