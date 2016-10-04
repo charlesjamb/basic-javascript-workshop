@@ -69,3 +69,15 @@ function differentOperations(num1, num2, str) {
 }
 
 differentOperations(5, 5, "test");
+
+/*Write a function that takes a string and a number, and returns the string repeated that many number of times. 
+Test your function with various inputs.*/
+
+function stringRepeated(str, num) {
+    for (i = 0; i <= num; i++) {
+    console.log(str);
+    }
+}
+
+stringRepeated("test", 5);
+
