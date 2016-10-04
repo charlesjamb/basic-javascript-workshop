@@ -49,3 +49,23 @@ function multiplyTwoNumbers(num1, num2) {
 
 multiplyTwoNumbers(5, 5);
 //when passing something other than a number we get "ReferenceError: string is not defined"
+
+/*Write a function that takes two numbers and a string. If the string is ‘add’, then return the sum of the numbers. 
+If the string is ‘subtract’, return the difference. If the string is ‘mult’, return the product. 
+If the string is ‘div’, return the ratio. Otherwise return 0.*/
+
+function differentOperations(num1, num2, str) {
+    if (str === "add") {
+        console.log(num1 + num2);
+    } else if (str === "substract") {
+        console.log(num1 - num2);
+    } else if (str === "mult") {
+        console.log(num1 * num2);
+    } else if (str === "div") {
+        console.log(num1 / num2);
+    } else {
+        console.log(0);
+    }
+}
+
+differentOperations(5, 5, "test");
