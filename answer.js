@@ -81,3 +81,13 @@ function stringRepeated(str, num) {
 
 stringRepeated("test", 5);
 
+/*Write a function that takes a string, and returns the reverse of that string. 
+For example, if you pass the function the string “hello”, it should return “olleh”. 
+Test your function on a few inputs, including the empty string.*/
+
+function inverseString(str) {
+    var x = str.split('').reverse().join('');
+    console.log(x);
+}
+
+inverseString("test");
