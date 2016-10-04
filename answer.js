@@ -128,7 +128,7 @@ factorialNumber(5);
 */
 
 /*Write a function that takes a phrase as a string, and returns the longest word in that phrase. 
-If the phrase contains more than one such word, return the first occurrence. Test your function on a few inputs.*/
+If the phrase contains more than one such word, return the first occurrence. Test your function on a few inputs.
 
 function longestWord(str) {
     var arr = str.split(" ");
@@ -144,3 +144,22 @@ function longestWord(str) {
 }
 
 longestWord("Pride and Prejudice")
+*/
+
+/*Write a function that takes a phrase, and returns the same phrase with every word capitalized. 
+For example, if you pass your function "hello world", it should return “Hello World” and if you pass it “HELLO WORLD” 
+or even "HeLLo WoRLD", it will also return "Hello World". Test your function of a few inputs.*/
+
+function capitalizedString(str) {
+    var newString = "";
+    for (var i = 0; i < str.length; i++) {
+        if ((i == 0) || (str.charAt(i-1) == " ")) {
+            newString = newString + str.charAt(i).toUpperCase();
+        } 
+        else {
+            newString = newString + str.charAt(i).toLowerCase()
+        }
+    }
+    console.log(newString);
+}
+capitalizedString("hello worD")
