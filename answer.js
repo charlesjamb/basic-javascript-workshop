@@ -39,3 +39,13 @@ function addTwoNumbers(num1, num2) {
 addTwoNumbers(5, "string");
 //if pass something other than a number it just logs the two inputs together
 
+/*Write a function that takes two numbers and multiplies them together. Test your function on a few inputs. 
+Write in your comments what happens when you pass something other than a number to your function.*/
+
+function multiplyTwoNumbers(num1, num2) {
+    var fithFunction = num1 * num2;
+    console.log(fithFunction);
+}
+
+multiplyTwoNumbers(5, 5);
+//when passing something other than a number we get "ReferenceError: string is not defined"
