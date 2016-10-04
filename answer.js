@@ -165,7 +165,7 @@ function capitalizedString(str) {
 capitalizedString("hello worD")
 */
 
-/*Write a function that takes an array and returns the largest number of the array. Test your function on a few inputs.*/
+/*Write a function that takes an array and returns the largest number of the array. Test your function on a few inputs.
 
 function largestNumber(array) {
 
@@ -180,6 +180,23 @@ function largestNumber(array) {
     console.log(number);
 }
 largestNumber([-10, -2, -3, -4, -5, -6])
+*/
 
+/*Write a function that takes an array, and returns a filtered array. 
+The filtered array should only contain the truthy values from the initial array.
+Hint: there is an array method called filter that can help you with this :)*/
 
+function truthy(x) {
+    if (x) {
+        return x;
+    }
+}
+
+function onlyTruthy(array) {
+    var filtered = [];
+    filtered = array.filter(truthy);
+    console.log(filtered);
+}
+
+onlyTruthy([true, false, 0, 45, undefined, "test", "", " "]);
 
